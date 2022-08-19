@@ -4,3 +4,25 @@ Fri 19 Aug 2022 12:44:09 PM UTC:
  tests:  1|5
 total_score: 10/70
 54ddba0
+Fri 19 Aug 2022 01:08:18 PM UTC: 
+ list.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:47:3: error: unknown type name ‘current’
+   47 |   current para que apunte a ese nodo.
+      |   ^~~~~~~
+list.c:47:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘que’
+   47 |   current para que apunte a ese nodo.
+      |                ^~~
+list.c: In function ‘pushFront’:
+list.c:63:9: error: unused variable ‘nodoNuevo’ [-Werror=unused-variable]
+   63 |   Node* nodoNuevo = createNode(data);
+      |         ^~~~~~~~~
+list.c: In function ‘nextList’:
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+   49 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5a2cda2
