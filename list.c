@@ -59,7 +59,7 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
   //la cual agrega un dato al comienzo de la lista. 
-  return NULL;
+  
   
 }
 
