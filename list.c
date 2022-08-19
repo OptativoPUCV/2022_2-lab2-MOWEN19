@@ -84,6 +84,9 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   Node *current = list->current;
+  if (current == NULL){
+    return NULL;
+  }
   current->prev->next = list->current->next;
   current->next->prev = list->current->prev;
   free(current);
