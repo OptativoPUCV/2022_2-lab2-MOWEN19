@@ -63,7 +63,7 @@ void pushFront(List * list, void * data) {
   if (list == NULL){
     return NULL;
   }
-  if (lñist != NULL){
+  if (list != NULL){
     
   }
   else{
@@ -92,6 +92,10 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  Node *current = list->current;
+  current->prev->next = list->current->next;
+  current->next->prev = list->current->prev;
+  free(current);
     return NULL;
 }
 
