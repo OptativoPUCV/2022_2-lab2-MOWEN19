@@ -83,10 +83,10 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node *Current = list->current;
-  Current->prev->next = list->current->next;
-  Current->next->prev = list->current->prev;
-  free(list->current);
+  Node *current = list->current;
+  current->prev->next = list->current->next;
+  current->next->prev = list->current->prev;
+  free(current);
     return NULL;
 }
 
