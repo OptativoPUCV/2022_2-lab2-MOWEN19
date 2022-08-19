@@ -26,3 +26,14 @@ list.c:49:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 5a2cda2
+Fri 19 Aug 2022 01:08:48 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:62:9: error: unused variable ‘nodoNuevo’ [-Werror=unused-variable]
+   62 |   Node* nodoNuevo = createNode(data);
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3814964
