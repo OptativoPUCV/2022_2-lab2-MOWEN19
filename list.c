@@ -78,7 +78,7 @@ void * lastList(List * list) {
 
 void * prevList(List * list) {
   //La segunda función retorna el dato del nodo anterior a current y actualiza el current para que apunte a ese nodo.
-  if (list->current == NULL){
+  if (!list->head){
     return NULL;
   }
   else if(list->current == list->head){
