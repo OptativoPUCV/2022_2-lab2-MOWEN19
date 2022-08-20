@@ -53,6 +53,9 @@ void * nextList(List * list) {
   if (list->current == NULL){
     return NULL;
   }
+  else if(list->current->next == NULL){
+    return NULL;
+  }
   else{
     list->current = list->current->next;
     return list->current->data;
