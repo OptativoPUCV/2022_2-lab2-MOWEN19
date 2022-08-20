@@ -40,7 +40,7 @@ void * firstList(List * list) {
   //La primera retorna el dato del primer nodo de la lista (`head`) y actualiza el current para que apunte a ese nodo.
   list->current = list->head;
     
-    return list->current;
+    return list->current->data;
 }
 
 void * nextList(List * list) {
