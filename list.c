@@ -41,6 +41,13 @@ void * firstList(List * list) {
   if (!list->head){
     return NULL;
   }    
+  else if (list->head == list->head->next){
+    return list->head;
+  }
+  else{
+    list->current = list->head;
+    return list->head;
+  }
     return list->current->data;
 }
 
