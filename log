@@ -131,3 +131,16 @@ Sat 20 Aug 2022 12:14:26 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ece725c
+Sat 20 Aug 2022 01:26:57 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:18: error: too few arguments to function ‘createNode’
+   41 |     list->head = createNode();
+      |                  ^~~~~~~~~~
+list.c:22:8: note: declared here
+   22 | Node * createNode(void * data) {
+      |        ^~~~~~~~~~
+Compilation failed
+9a22c50
