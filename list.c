@@ -42,6 +42,10 @@ void * firstList(List * list) {
     return NULL;
   }    
   
+  else{
+    list->current = list->head;
+    return list->head;
+  }
     return list->current->data;
 }
 
