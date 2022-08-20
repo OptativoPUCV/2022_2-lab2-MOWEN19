@@ -39,7 +39,7 @@ List * createList() {
 void * firstList(List * list) {
   //La primera retorna el dato del primer nodo de la lista (`head`) y actualiza el current para que apunte a ese nodo.
     //list->head = data;
-    list->current = list->head->next;
+    list->current = list->head;
     return list->head->data;
 }
 
