@@ -95,7 +95,10 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
   //la cual agrega un dato al comienzo de la lista. 
-  
+  Node *dato = createNode(data);
+  list->head->prev = dato;
+  dato->next = list->head;
+  list->head = dato;
   
 }
 
