@@ -219,3 +219,18 @@ Sat 20 Aug 2022 01:34:12 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ad856d7
+Sat 20 Aug 2022 01:46:39 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:27: error: incompatible type for argument 1 of ‘createNode’
+   41 |   list->head = createNode(*list);
+      |                           ^~~~~
+      |                           |
+      |                           List {aka struct List}
+list.c:22:26: note: expected ‘void *’ but argument is of type ‘List’ {aka ‘struct List’}
+   22 | Node * createNode(void * data) {
+      |                   ~~~~~~~^~~~
+Compilation failed
+17c5e6e
