@@ -154,3 +154,17 @@ Sat 20 Aug 2022 01:27:45 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 d1bb8a2
+Sat 20 Aug 2022 01:28:36 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:23: error: too few arguments to function ‘calloc’
+   32 |   List* list = (List*)calloc(sizeof(List));
+      |                       ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+5d4e666
