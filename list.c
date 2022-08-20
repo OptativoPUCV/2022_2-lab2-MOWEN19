@@ -50,7 +50,7 @@ void * firstList(List * list) {
 void * nextList(List * list) {
   // La segunda función retorna el dato del nodo continuación del current y actualiza el current para que apunte a ese nodo.
   list->current = list->current->next;
-    return list->current->next->data;
+    return list->current->data;
   
 }
 
