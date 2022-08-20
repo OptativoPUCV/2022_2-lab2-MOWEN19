@@ -86,7 +86,7 @@ void * prevList(List * list) {
   }    
   else{
     list->current = list->current->prev;
-    return list->current->prev->data;
+    return list->current->data;
   }
 }
 
