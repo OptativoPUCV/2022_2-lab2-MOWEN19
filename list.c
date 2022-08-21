@@ -152,7 +152,7 @@ void * popCurrent(List * list) {
     Node *dato = createNode(list->head->data);
     list->head = current->next;
     list->head->prev = NULL;
-    return ;
+    return dato;
     
   }
 }
