@@ -500,3 +500,8 @@ list.c:146:7: error: ‘current’ undeclared (first use in this function); did 
 list.c:146:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 435dab5
+Sun 21 Aug 2022 03:55:35 AM UTC: 
+ list.c | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+ tests:  0|0
+3fe628a
