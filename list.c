@@ -116,6 +116,7 @@ void pushCurrent(List * list, void * data) {
   //la cual agrega un dato a continuación del nodo apuntado por `list->current`.
   Node *dato = createNode(data);
   if (!list->head){
+  
     list->head = dato;
     list->tail = dato;
     return ;
@@ -144,16 +145,18 @@ void * popCurrent(List * list) {
   Node *current = list->current;
   if (current == NULL){
     current = current->next;
-    list->head->prev = NULL;
     return NULL;
   }
-  if (list->head == list->current){
-    list->head = list->current->next;
-    list->head->prev = NULL;
-    return list->head->prev->data;
-    
+  else if (list -> head == current){
+    Node *dato = list->head->data;
+    current->next->prev = NULL;
+    list->head = current->next;
+    list->current = list->head;
+    return dato;
   }
   
+  current->prev->next = list->current->next;
+  current->next->prev = list->current->prev;
   //free(current);
   
   return NULL;
