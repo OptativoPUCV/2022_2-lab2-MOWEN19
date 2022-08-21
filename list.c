@@ -144,6 +144,7 @@ void * popCurrent(List * list) {
   Node *current = list->current;
   if (current == NULL){
     current = current->next;
+    list->head->prev = NULL;
     return NULL;
   }
   if (list->head == list->current){
