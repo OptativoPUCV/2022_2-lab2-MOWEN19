@@ -155,6 +155,7 @@ void * popCurrent(List * list) {
     return dato;
     
   }
+  return NULL;
 }
 
 void cleanList(List * list) {
