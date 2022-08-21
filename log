@@ -543,3 +543,20 @@ list.c:158:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 255b91a
+Sun 21 Aug 2022 04:04:26 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:155:5: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  155 |     return ;
+      |     ^~~~~~
+list.c:143:8: note: declared here
+  143 | void * popCurrent(List * list) {
+      |        ^~~~~~~~~~
+list.c:152:11: error: unused variable ‘dato’ [-Werror=unused-variable]
+  152 |     Node *dato = createNode(list->head->data);
+      |           ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a2ab4bf
