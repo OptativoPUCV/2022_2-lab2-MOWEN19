@@ -120,10 +120,17 @@ void pushCurrent(List * list, void * data) {
     list->tail = dato;
     return ;
   }
-  list->current->next = dato;
-  dato->prev = list->current;
+  else if (list->current == list->tail){
+    list->current->next = dato;
+    dato->prev = list->current;
+  }
+  else{
+    list->current->next = dato;
+    dato->prev = list->current;
+  }
+  }
   
-}
+
 
 void * popFront(List * list) {
     list->current = list->head;
