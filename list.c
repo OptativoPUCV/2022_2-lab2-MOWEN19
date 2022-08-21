@@ -158,9 +158,10 @@ void * popCurrent(List * list) {
     
   }
   else{
-    return NULL;
+    
   }
-  
+    return NULL;
+
 }
 
 void cleanList(List * list) {
